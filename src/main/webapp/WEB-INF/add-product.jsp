@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Add Product</title>
+    <title>Add Product</title>
+    <link rel="stylesheet" href="e-commercestyles.css">
 </head>
 <body>
 
-<h2>Add Product</h2>
+<div class="container">
 
-<form action="/save-product" method="post">
+    <h2>Add New Product</h2>
 
-    Product Name:
-    <input type="text" name="productName" required>
-    <br><br>
+    <p>
+        Enter product details to add a new electronic device to the store.
+    </p>
 
-    Price:
-    <input type="number" name="price" required>
-    <br><br>
+    <form action="/save-product" method="post">
 
-    Quantity:
-    <input type="number" name="quantity" required>
-    <br><br>
+        <label>Product Name</label>
+        <input type="text" name="productName" required>
 
-    Description:
-    <textarea name="description"></textarea>
-    <br><br>
+        <label>Price</label>
+        <input type="number" name="price" required>
 
-    <button type="submit">Save Product</button>
+        <label>Quantity</label>
+        <input type="number" name="quantity" required>
 
-</form>
+        <label>Description</label>
+        <textarea name="description" rows="4"></textarea>
+
+        <button type="submit">
+            Add Product
+        </button>
+
+    </form>
+
+</div>
 
 </body>
 </html>
